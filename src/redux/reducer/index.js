@@ -1,4 +1,13 @@
+import { GET_CITY } from "../actions/actionsType";
+const initialState = {
+    allCities: [],
+};
 
-const initialState = {};
-
-export default function rootReducer(state = initialState, action){}
+export default function rootReducer(state = initialState, action){
+    switch(action.type){
+        case GET_CITY:
+            return{...state, allCities: [...state.allCities, action.payload]};
+        default:
+            return {...state};
+    }
+}
