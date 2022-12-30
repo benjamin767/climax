@@ -7,7 +7,7 @@ export default function SearchBar({onSearch}) {
             <form onSubmit={(e) => {
                 e.preventDefault();
                 onSearch(city);
-            }}>
+            }} className="mx-auto">
                 <input
                 type="text" 
                 value={city}

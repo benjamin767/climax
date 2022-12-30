@@ -8,6 +8,9 @@ const { REACT_APP_API_KEY } = process.env;
 
 function App() {
   const [state, setState] = useState([]);
+  const onClose = (id) => {
+    setState(state.filter(c => c.id !== id));
+  }
   const onSearch = (city) => {
     axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_API_KEY}&units=metric`)
       .then(r => r.data)
@@ -43,7 +46,7 @@ function App() {
     <BrowserRouter>
       <Route
         exact path="/"
-        render={() => <Home cities={state} onSearch={onSearch} />}
+        render={() => <Home cities={state} onSearch={onSearch} onClose={onClose}/>}
       />
       <Route
         exact path="/:cityId"
