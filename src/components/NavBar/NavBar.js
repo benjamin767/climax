@@ -1,12 +1,12 @@
 import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
 
 
-export default function NavBar({ onSearch }) {
+
+export default function NavBar() {
 
     return (
         <nav className="navbar-nav bg-dark text-light mb-5">
-            <SearchBar onSearch={onSearch}/>
+            <h1 className="text-light mx-auto">Climax</h1>
         </nav>
     );
 }

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import CityDetils from './components/CityDetails/CityDetails';
+import NavBar from "./components/NavBar/NavBar";
 import axios from 'axios';
 const { REACT_APP_API_KEY } = process.env;
 
@@ -44,6 +45,9 @@ function App() {
   }
   return (
     <BrowserRouter>
+      <Route 
+        render={() =><NavBar />}
+      />
       <Route
         exact path="/"
         render={() => <Home cities={state} onSearch={onSearch} onClose={onClose}/>}

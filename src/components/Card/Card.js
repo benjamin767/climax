@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-export default function Card({ city: { id, img, max, min, name, onClose } }) {
+export default function Card({ city: { id, img, max, min, name },onClose }) {
     return (
         <>
             <div className="card">
                 <div id="closeIcon" className="row">
-                    <button onClick={onClose} className="btn btn-sm btn-danger">X</button>
+                    <button onClick={()=>onClose(id)} className="btn btn-sm btn-danger">X</button>
                 </div>
                 <div className="card-body">
                     <Link to={`/${id}`}><h3>{name}</h3></Link>
