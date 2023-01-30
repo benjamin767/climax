@@ -15,7 +15,7 @@ export default function SearchBar({onSearch}) {
                     placeholder="City..."
                     onChange={(e) => setCity(e.target.value)}
                     />
-                    <input className="btn btn-primary input-group-text" type="submit" value="Buscar"/>
+                    <input className="btn btn-primary input-group-text" type="submit" value="Search"/>
                 </div>
             </form>
         </div>

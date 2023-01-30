@@ -5,7 +5,7 @@ import "./Card.css";
 export default function Card({ city: { id, img, max, min, name },onClose }) {
     return (
         <>
-            <div className="card">
+            <div className="card width">
                 <div id="closeIcon" className="row">
                     <button onClick={()=>onClose(id)} className="btn btn-sm btn-danger">X</button>
                 </div>

@@ -16,26 +16,26 @@ function App() {
     axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_API_KEY}&units=metric`)
       .then(r => r.data)
       .then((recurso) => {
-        if (recurso.main) {
-          const cityData = {
-            min: Math.round(recurso.main.temp_min),
-            max: Math.round(recurso.main.temp_max),
-            img: recurso.weather[0].icon,
-            id: recurso.id,
-            wind: recurso.wind.speed,
-            temp: recurso.main.temp,
-            name: recurso.name,
-            weather: recurso.weather[0].main,
-            clouds: recurso.clouds.all,
-            latitud: recurso.coord.lat,
-            longitud: recurso.coord.lon
-          };
-          state.push(cityData)
-          let hash = {};
-          setState(state.filter(o => hash[o.id] ? false : hash[o.id] = true))
-        } else {
-          alert("Ciudad no encontrada");
-        }
+        const cityData = {
+          min: Math.round(recurso.main.temp_min),
+          max: Math.round(recurso.main.temp_max),
+          img: recurso.weather[0].icon,
+          id: recurso.id,
+          wind: recurso.wind.speed,
+          temp: recurso.main.temp,
+          name: recurso.name,
+          weather: recurso.weather[0].main,
+          clouds: recurso.clouds.all,
+          latitud: recurso.coord.lat,
+          longitud: recurso.coord.lon
+        };
+        state.push(cityData)
+        let hash = {};
+        setState(state.filter(o => hash[o.id] ? false : hash[o.id] = true))
+      })
+      .catch(error => {
+        console.log(error);
+        alert("Oh, city not found");
       });
   }
   function onFilter(ciudadId) {
