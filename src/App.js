@@ -13,7 +13,7 @@ function App() {
     setState(state.filter(c => c.id !== id));
   }
   const onSearch = async (city) => {
-    await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_API_KEY}&units=metric`)
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_API_KEY}&units=metric`)
       .then(r => r.data)
       .then((recurso) => {
         const cityData = {
