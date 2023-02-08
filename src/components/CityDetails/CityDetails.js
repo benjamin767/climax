@@ -10,15 +10,15 @@ export default function CityDetils({city:{name, img, min, max, temp, wind, weath
                     <h3>{name}</h3>
                     <p>Weather: {weather}</p>
                     <p>Clouds: {clouds}</p>
-                    <p>Longitud: {longitud}</p>
-                    <p>Latitud: {latitud}</p>
+                    <p>Wind: {wind}</p>
+                    <p>Lon: {longitud}</p>
+                    <p>Lat: {latitud}</p>
                 </div>
                 <div className="col-md-4">
-                    <div className="card-body my-auto mx-auto">
+                    <div className="card-body">
                         <p>Min: {min}°</p>
                         <p>Max: {max}°</p>
                         <p>Temp: {temp}</p>
-                        <p>Wind: {wind}</p>
                         <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="img-weather"/>
                     </div>
                 </div>
