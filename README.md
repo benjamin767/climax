@@ -3,8 +3,9 @@
 Link: https://climax-eight.vercel.app/
 
 #
-En este proyecto se simula una app del clima, donde tienen un Searchbar donde podes buscar ciudad, provincia, pais, etc.
-Ademas podes ingresar a los detalles de dicho lugar.
+En este proyecto se simula una app del clima utilizando la api de openweathermap.
+La pagina en cuestión tienen un Searchbar donde podes buscar por ciudad, provincia, pais, etc. Una vez realizada la busqueda, si encuentra alguna coincidencia muestra temperatura maxima y minima del lugar (ciudad, provincia, pais, etc).
+Ademas podes ingresar a los detalles de dicho lugar. Donde se renderizaran algunos detalles mas del clima.
 
 Arriba esta el Link para ir a la página deployada.
 Muchas tenkius...
