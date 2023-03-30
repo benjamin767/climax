@@ -2,7 +2,7 @@ import React from "react";
 export default function CityDetils({ city: { name, img, min, max, temp, wind, weather, clouds, latitud, longitud } }) {
 
     return (<>
-        <div className="container w-100">
+        <div className="container w-100 vh-100">
             <div className="card mb-3 mx-auto bg-dark text-light shadow-lg">
                 <div
                     className="d-flex flex-row justify-content-center w-100"
