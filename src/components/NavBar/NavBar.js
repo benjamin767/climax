@@ -4,7 +4,12 @@ export default function NavBar() {
 
     return (
         <nav className="navbar-nav bg-dark text-light mb-5">
-            <Link to="/"><h1 className="text-light mx-auto">Climax</h1></Link>
+            <Link 
+                to="/"
+                className="text-decoration-none mx-auto"
+            >
+                <h1>Climax</h1>
+            </Link>
         </nav>
     );
 }
