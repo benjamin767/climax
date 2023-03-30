@@ -10,6 +10,12 @@ Ademas podes ingresar a los detalles de dicho lugar. Donde se renderizaran algun
 Arriba esta el Link para ir a la página deployada.
 Muchas tenkius...
 
+### Tecnologias:
+* Javascript
+* React
+* Bootstrap
+* CSS
+
 ## Available Scripts
 
 In the project directory, you can run:
