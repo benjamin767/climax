@@ -5,7 +5,7 @@ export default function CityDetils({ city: { name, img, min, max, temp, wind, we
         <div className="container w-100">
             <div className="card mb-3 mx-auto bg-dark text-light shadow-lg">
                 <div
-                    className="text-bg-dark d-flex flex-row justify-content-center w-100"
+                    className="d-flex flex-row justify-content-center w-100"
                 >
                     <h3>{name}</h3>
                 </div>
