@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import CityDetils from './components/CityDetails/CityDetails';
 import NavBar from "./components/NavBar/NavBar";
 import axios from 'axios';
+import Footer from './components/Footer/Footer';
 const { REACT_APP_API_KEY } = process.env;
 
 function App() {
@@ -55,6 +56,9 @@ function App() {
       <Route
         exact path="/:cityId"
         render={({match}) => <CityDetils city={onFilter(match.params.cityId)} />}
+      />
+      <Route 
+        render={() =><Footer />}
       />
     </BrowserRouter>
   );
