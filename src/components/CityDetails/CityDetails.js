@@ -1,5 +1,4 @@
 import React from "react";
-import "./CityDetails.css";
 export default function CityDetils({ city: { name, img, min, max, temp, wind, weather, clouds, latitud, longitud } }) {
 
     return (<>
