@@ -2,7 +2,7 @@ import React from "react";
 export default function CityDetils({ city: { name, img, min, max, temp, wind, weather, clouds, latitud, longitud } }) {
 
     return (<>
-        <div className="container w-100 vh-100">
+        <div className="container w-100 vh-75">
             <div className="card mb-3 mx-auto bg-dark text-light shadow-lg">
                 <div
                     className="d-flex flex-row justify-content-center w-100"
@@ -27,13 +27,14 @@ export default function CityDetils({ city: { name, img, min, max, temp, wind, we
                             <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="img-weather" />
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
+                        <div className="card-body">
                         <img 
                             src="https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg" 
                             alt="city"
-                            width={252}
-                            height={205}
+                            className="img-fluid"
                         />
+                        </div>
                     </div>
                 </div>
             </div>
