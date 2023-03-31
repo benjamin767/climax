@@ -13,8 +13,8 @@ export default function CityDetils({ city: { name, img, min, max, temp, wind, we
                     <div className="col-md-4">
                         <div className="card-body">
                             <p>Weather: {weather}</p>
-                            <p>Clouds: {clouds}</p>
-                            <p>Wind: {wind}</p>
+                            <p>Clouds: {clouds}%</p>
+                            <p>Wind: {wind} km/h</p>
                             <p>Lon: {longitud}</p>
                             <p>Lat: {latitud}</p>
                         </div>
