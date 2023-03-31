@@ -10,7 +10,13 @@ export default function Card({ city: { id, img, max, min, name },onClose }) {
                     <button onClick={()=>onClose(id)} className="btn btn-sm btn-danger">X</button>
                 </div>
                 <div className="card-body">
-                    <Link to={`/${id}`}><h3>{name}</h3></Link>
+                    <div
+                        className="d-flex flex-row justify-content-center"
+                    >
+                        <Link to={`/${id}`}>
+                            <h3>{name}</h3>
+                        </Link>
+                    </div>
                     <div className="row">
                         <div className="col-sm-4 col-md-4 col-lg-4">
                             <p>min</p>
